@@ -1,0 +1,139 @@
+.jumbo {
+	height: 80vh;
+}
+
+@media only screen and (min-width: 960px) {
+    .page-id-7 .content {
+        width: 65%;
+    }
+    }
+
+.full-width-middle {
+    max-width: 1140px; margin: 0 auto; padding: 0 30px;
+    }
+
+@media only screen and (min-width: 960px) {
+    .full-width-inner-align {
+            width: 65%;
+            margin: 0 auto 20px;
+    }
+    }
+
+@media only screen and (min-width: 960px) {
+    .normal-width-2 {
+        width: 65% !important;
+        margin: auto !important;
+}
+    .full-width-inner {
+    width: 75%;
+    margin: 0 auto;
+}
+}
+
+.full-width-wrapper {
+	background-image:
+linear-gradient(to left, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0.5)),
+url('http://sixpeakcapital.wpengine.com/wp-content/uploads/2019/05/chris-barbalis-1070146-unsplash.jpg');
+	background-color: #19261F;
+	background-position: center bottom; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.full-width-wrapper-2 {
+	background-color: #fff;
+	box-shadow: 0px 2px 8px #e8e8e8;
+}
+
+.full-width-wrapper-strategy {
+	background-color: #f8f9f4;
+	box-shadow: 0px 2px 8px #f8f9f4;
+}
+
+.full-width-wrapper-4 {
+	background-color: #fff;
+	box-shadow: 0px 2px 8px #e8e8e8;
+	color: #333;
+}
+
+
+.full-width-inner-big {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.proj-title, .proj-cover {
+	margin: 0 0 5px;
+}
+
+.proj-desc {
+	margin: 0 0 50px;
+}
+
+/* Blogger2wp.com - adjust anchor landing for fixed header */
+@media only screen and (min-width: 960px) {
+    .anchor-wrapper a {
+      position: absolute;
+      left: 0px;
+      top: -130px;
+    }
+    .anchor-wrapper {
+      position: relative;
+        
+    }
+    }
+
+    .above-img {
+        margin-bottom: 0;
+    }
+
+    .h2-with-highlight {
+        margin-bottom: 18px;
+    }
+
+    .green-highlight {
+        height: 8px;
+        width: 50px;
+        background-color: #717f4b;
+        margin-bottom: 20px;
+    }
+    
+    .full-width-inner-header {
+        max-width: 1140px;
+        padding: 0 30px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+// Page 57 Styles?
+
+@media only screen and (min-width: 960px) {
+	.page-id-57 .content {
+			width: 80%;
+			margin: auto;
+	}
+}
+
+@media only screen and (min-width: 960px) {
+	.page-id-57 .content .normal-width {
+	  width: 65%;
+		margin: auto;
+}
+}
+
+.page-id-57 .site-container .wp-block-button {
+    margin-bottom: 0;
+}
+
+.page-id-57 .site-container .wp-block-button .wp-block-button__link {
+	min-width: 250px;
+}
+
+.page-id-57 .wp-block-image.alignwide {
+	margin-bottom: 5px;
+}
