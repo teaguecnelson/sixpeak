@@ -302,7 +302,7 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 // Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = 'Copyright [footer_copyright] Six Peak Capital | All Rights Reserved | Privacy & Terms<br />Made in Seattle by Measured Digital';
+	$creds = 'Copyright [footer_copyright] Six Peak Capital | All Rights Reserved<br />Made in Seattle by <a href="https://www.measuredux.com/">Measured Digital</a>';
 	return $creds;
 }
 

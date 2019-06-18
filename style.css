@@ -1555,19 +1555,19 @@ p.entry-meta {
     page-break-before: avoid; } }
 
 @font-face {
-  font-family: 'arcon';
+  font-family: "arcon";
   src: url("https://sixpeakcapital.wpengine.com/wp-content/themes/genesis-sample/fonts/arcon-regular.otf");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'arcon';
+  font-family: "arcon";
   src: url("https://sixpeakcapital.wpengine.com/wp-content/themes/genesis-sample/fonts/arcon-regular.otf");
   font-weight: bold;
   font-style: bold; }
 
 @font-face {
-  font-family: 'miller-text-roman';
+  font-family: "miller-text-roman";
   src: url("https://sixpeakcapital.wpengine.com/wp-content/themes/genesis-sample/fonts/miller-text-roman.otf");
   font-weight: normal;
   font-style: normal; }
@@ -1590,7 +1590,7 @@ p.entry-meta {
   color: #fff; }
 
 .highlight {
-  background-color: #FFD849; }
+  background-color: #ffd849; }
 
 .no-margin {
   margin: 0; }
@@ -1626,12 +1626,21 @@ p {
 body {
   font-family: "arcon", "Source Sans Pro", sans-serif; }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
   font-family: "arcon", "Source Sans Pro", sans-serif; }
 
 h2 {
   font-size: 1.75rem;
   letter-spacing: 0.1rem; }
+
+h3 {
+  font-size: 24px !important; }
 
 .site-inner p {
   font-family: "miller-text-roman", "Source Sans Pro", sans-serif;
@@ -1639,9 +1648,18 @@ h2 {
   font-size: 0.9rem;
   line-height: 1.6; }
 
+.site-container .wp-block-button .wp-block-button__link {
+  font-family: "arcon", "Source Sans Pro", sans-serif; }
+
+.site-container .wp-block-button.is-style-outline .wp-block-button__link {
+  border: 1px solid currentColor; }
+
 @media only screen and (min-width: 960px) {
   .sidebar {
     width: 20%; } }
+
+#listcategorypostswidget-2 {
+  margin-bottom: 10px !important; }
 
 .site-header {
   padding: 5px 30px;
@@ -1654,16 +1672,20 @@ h2 {
     margin: 0 auto;
     padding: 0 0 0 30px; } }
 
+/* ===== Header > Navbar ============ */
+.genesis-nav-menu .current-menu-item > a {
+  color: #333333; }
+
 .site-footer {
-  background-color: #3B3B3A;
-  color: #A6A6A6;
+  background-color: #3b3b3a;
+  color: #a6a6a6;
   border-top: none; }
 
 .footer-widgets {
   padding: 30px 0;
   margin-bottom: 0 !important;
-  background-color: #3B3B3A;
-  color: #A6A6A6; }
+  background-color: #3b3b3a;
+  color: #a6a6a6; }
 
 .footer-widgets h3 {
   font-size: 24px;
@@ -1679,8 +1701,8 @@ h2 {
 .wpcf7 input {
   padding: 10px 15px;
   height: 40px;
-  background-color: #4A4A4A;
-  border: 2px solid #4A4A4A;
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
   color: #fff;
   font-size: 16px;
   margin-bottom: 10px; }
@@ -1688,13 +1710,16 @@ h2 {
 .wpcf7 .wpcf7-textarea {
   padding: 10px 15px;
   height: 40px;
-  background-color: #4A4A4A;
-  border: 2px solid #4A4A4A;
+  background-color: #4a4a4a;
+  border: 2px solid #4a4a4a;
   color: #fff;
   font-size: 16px; }
 
 .wpcf7-submit {
   margin-top: 15px; }
+
+.footer-widgets-3 {
+  padding: 3rem 7rem 0; }
 
 .ab-block-accordion .ab-accordion-title {
   background: #ffffff;
@@ -1722,11 +1747,26 @@ h2 {
   background-color: white !important;
   text-decoration: underline; }
 
-body, .ub_image_slider .flickity-button {
-  background-color: #F7F7F7; }
+/* ===== Portfolio Tabbed Content Homepage ============ */
+@media only screen and (min-width: 960px) {
+  .wp-block-ub-tabbed-content-tabs-title {
+    /*     width: 550px; */
+    width: 325px;
+    margin: 0 auto; } }
 
-.ub_image_slider {
-  margin-top: 50px; }
+.wp-block-ub-tabbed-content-tabs-content {
+  border: none; }
+
+.wp-block-ub-tabbed-content-tab-title-wrap {
+  border: none;
+  padding: 10px 25px;
+  margin: 0 auto; }
+
+.wp-block-ub-tabbed-content .wp-block-columns {
+  margin-bottom: 1rem; }
+
+.wp-block-ub-tabbed-content-tabs-content {
+  padding: 25px 0; }
 
 /** Organisms */
 /** Pages */
@@ -1757,7 +1797,7 @@ body, .ub_image_slider .flickity-button {
 
 .full-width-wrapper {
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("http://sixpeakcapital.wpengine.com/wp-content/uploads/2019/05/chris-barbalis-1070146-unsplash.jpg");
-  background-color: #19261F;
+  background-color: #19261f;
   background-position: center bottom;
   /* Center the image */
   background-repeat: no-repeat;
@@ -1782,7 +1822,8 @@ body, .ub_image_slider .flickity-button {
   width: 75%;
   margin: 0 auto; }
 
-.proj-title, .proj-cover {
+.proj-title,
+.proj-cover {
   margin: 0 0 5px; }
 
 .proj-desc {
@@ -1814,21 +1855,11 @@ body, .ub_image_slider .flickity-button {
   padding: 0 30px;
   margin: 0 auto; }
 
+/* ===== Homepage Section Formatting ============ */
 @media only screen and (min-width: 960px) {
-  .page-id-57 .content {
-    width: 80%;
-    margin: auto; } }
-
-@media only screen and (min-width: 960px) {
-  .page-id-57 .content .normal-width {
+  .full-width-inner {
     width: 65%;
-    margin: auto; } }
+    margin: 0 auto; } }
 
-.page-id-57 .site-container .wp-block-button {
+.above-img {
   margin-bottom: 0; }
-
-.page-id-57 .site-container .wp-block-button .wp-block-button__link {
-  min-width: 250px; }
-
-.page-id-57 .wp-block-image.alignwide {
-  margin-bottom: 5px; }
