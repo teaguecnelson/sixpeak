@@ -302,8 +302,30 @@ add_theme_support( 'genesis-footer-widgets', 3 );
 // Change the footer text
 add_filter('genesis_footer_creds_text', 'sp_footer_creds_filter');
 function sp_footer_creds_filter( $creds ) {
-	$creds = 'Copyright [footer_copyright] Six Peak Capital | All Rights Reserved<br />Made in Seattle by <a href="https://www.measuredux.com/">Measured Digital</a>';
+	$creds = 'Copyright [footer_copyright] Six Peak Capital | All Rights Reserved | Privacy Policy & Terms<br />Made in Seattle by <a href="https://www.measuredux.com/">Measured Digital</a>';
 	return $creds;
 }
 
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' );
+
+// Add Google Tag Manager code in <head>
+add_action( 'wp_head', 'sk_google_tag_manager1' );
+function sk_google_tag_manager1() { ?>
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-NH422WF');</script>
+	<!-- End Google Tag Manager -->
+	<meta name="google-site-verification" content="vwos7LJ7IahS3wMxYTQYJOUENChXPvRXibS6hJ6d2d8" />
+<?php }
+
+// Add Google Tag Manager second part code immediately below opening <body> tag
+add_action( 'genesis_before', 'sk_google_tag_manager2' );
+function sk_google_tag_manager2() { ?>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NH422WF"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+<?php }

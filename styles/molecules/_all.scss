@@ -1,4 +1,4 @@
-// This is a copy of all the styling in the "additional CSS Pannel in WP Customizer". It's already been added in the .scss files, but needs to be loaded last in order for these styles to take effect.
+// This is a copy of all the styling in the "additional CSS Pannel in WP Customizer". Some of it has been added in the various Scss Files, but needs to be loaded last in order for these styles to take effect.
 
 /* ===== Portfolio Tabbed Content Homepage ============ */
 
@@ -45,11 +45,18 @@ h3 {
   font-size: 24px !important;
 }
 
-/* =====After Style Breakout============ */
+/* =====Footer============ */
 
 .footer-widgets-3 {
   padding: 3rem 7rem 0;
 }
+
+.site-footer a {
+	color: #A6A6A6;
+}
+
+
+/* =====After Style Breakout============ */
 
 .wp-block-ub-tabbed-content .wp-block-columns {
   margin-bottom: 1rem;
