@@ -25,3 +25,6 @@ The _all.scss file in molecules is not imported into styles.scss, and contains a
 
 ##Code Quality
 Sass files were formatted with “Prettier - Code formatter” Visual Studio plugin. Further linting should be done both for SCSS and PHP code.
+
+## External Plugins & Scripts
+To comply with the EU’s GDPR, current U.S. state data protection laws, and the upcoming California CCPA law, we are using a notification script called Cookie Consent by Osano. This prompts a popup in the lower right corner of the screen, letting users know that the site uses cookies. This script is inserted into the head of the site using the Genesis insert scripts pannel in WordPress.
